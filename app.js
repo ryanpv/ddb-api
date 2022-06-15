@@ -10,7 +10,7 @@ const {
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    res.send('Hello World - this is the index page');
 });
 
 app.get('/characters', async (req, res) => {
@@ -68,8 +68,8 @@ app.delete('/characters/:id', async (req, res) => {
     }
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4949;
 
 app.listen(port, () => {
-    console.log('listening on port');
+    console.log('listening on port...');
 });
